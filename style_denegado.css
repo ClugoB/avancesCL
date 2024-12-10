@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap');
+:root {
+    --light: #fd8cdb;  
+    background: -webkit-linear-gradient(to right, #faa1d2, #f1c0e3);  
+    background: linear-gradient(to right, #fc99cf, #f8bce6);
+    --primary: #ffffff;
+    --light-primary: #f8d9fa;
+    --grey: #f8d9fa;
+    --dark-grey: #AAAAAA;
+    --main: #e49ec1;
+    --dark: #181a1e;
+    --danger: #ce108e;
+	--light-danger: #FECDD3;
+    --warning: #FBC02D;
+    --light-warning: #FFF2C6;
+    --success: #388E3C;
+    --light-success: #BBF7D0;
+    --border: #000000;
+    --botones: #edacf1;
+    --botones-hover: #c27cc7;
+    --letra-botones: #000000;
+    --buscador: #000000;
+    --form: #e49ec1;
+    --scroll: #edacf1;
+    --scroll-hover: #c27cc7;
+    --scroll-track: #ecbaf0;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body {
+    background-color: var(--light-primary);
+    color: #000000; 
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    font-weight: 600; 
+}
+.contenedor {
+    border: 1px solid #000000;
+    background-color: #ffffff; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    max-width: 400px; 
+    margin: auto; 
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #dc3545; 
+}
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+.boton {
+    background-color: var(--botones);
+    border: 2px solid var(--botones-hover);
+    border-radius: 5px;
+    color: var(--letra-botones);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: 600; 
+}
+.boton:hover {
+    background-color: var(--botones-hover);
+    border: 2px solid var(--botones-hover);
+    box-shadow: 0 0 10px var(--botones-hover);
+    color: #ffffff;
+}
